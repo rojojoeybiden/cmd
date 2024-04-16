@@ -1,0 +1,30 @@
+.calc  
+{  
+width: 300px;  
+border-radius: 5px;  
+padding: 20px;  
+}  
+
+input {  
+    background-color: black;
+    color: lime;
+    border: none;  
+    font-size: 20px;
+    padding: 20px;
+    transition: background-color 0.3 ease-in-out;
+}  
+
+input:hover {
+    background-color: #1a1a1a;
+}
+
+.calcButton {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+#calc {    
+    border: none;  
+    border-radius: 3px;  
+} 

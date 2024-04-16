@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="cmd.png">
+    <title>Calculator | The Command Prompt</title>
+</head>
+
+<body>
+    <div id="allhead">
+        <div id="header">
+            <div class="headerTitle">
+                <img src="cmd.png" alt="cmd logo">
+                <p>Team Joey (Lovelace)</p>
+            </div>
+
+        </div>
+
+        <div class="headerbutton">
+            <span class="material-symbols-outlined" style="font-size: 20px;">minimize</span>
+        </div>
+
+        <div class="headerbutton">
+            <span class="material-symbols-outlined" style="font-size: 20px;">stack</span>
+        </div>
+
+        <div class="closebutton">
+            <a href="index.html">
+                <span class="material-symbols-outlined" style="font-size: 20px;">close</span>
+            </a>
+        </div>
+    </div>
+    
+    <div id="content">
+        <p>Team Joey | Lovelace [Version 1.0]</p>
+        <p>(c) Joey&Hiro. All rights reserved.</p>
+        <br>
+        <p>C:\Joey\user>calculator</p>
+        <p>[CALCULATOR]</p>
+        <br>
+
+        <div class= "calc">  
+            <form name = "form1">  
+                <div id="calcInput">
+                    <input id = "calc" type ="text" name = "answer"> <br> <br>  
+                    
+                    <div class="calcButton">
+                        <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+                        <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+                        <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+                         <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+                        <br> <br>  
+                          
+                        <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+                        <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+                        <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+                        <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+                        <br> <br>  
+                          
+                        <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+                        <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+                        <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+                        <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+                        <br> <br>  
+                          
+                          
+                        <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+                        <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+                          <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+                      
+                        <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+                        <br> <br>  
+                    </div>
+             
+                    <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >  
+                    <br>   
+                </div>     
+                
+            </form>  
+        </div>  
+
+        <div id="search">
+            <p>C:\Joey\user></p>
+            <input id="input" type="text">
+        </div>
+
+        <br>
+        <p id="error"></p>
+        <script>
+            let input = document.getElementById('input');
+            input.addEventListener("keypress", function(event) {
+              if (event.key === "Enter") {
+                event.preventDefault();
+                if(input.value === "Calculator" || input.value === "calculator"){
+                    window.open("calc.html", "_self");
+                }
+                else if(input.value === "LoveLace" || input.value === "lovelace"){
+                    window.open("lovelace.html", "_self");
+                }
+                else if(input.value === "Donut" || input.value === "donut"){
+                    window.open("donut.html", "_self");
+                }
+                else if(input.value === "Facts" || input.value === "facts"){
+                    window.open("facts.html", "_self");
+                }
+                else if(input.value === "Frogger" || input.value === "frogger"){
+                    window.open("frogger.html", "_self");
+                }
+                else if(input.value === "Credits" || input.value === "credits"){
+                    window.open("credits.html", "_self");
+                }
+                else if(input.value === "Home" || input.value === "home"){
+                    window.open("home.html", "_self");
+                }
+                else if(input.value === "Pong" || input.value === "pong"){
+                    window.open("pong.html", "_self");
+                }
+                else if(input.value === "Help" || input.value === "help"){
+                    window.open("Help.html", "_self");
+                }   
+                else if(input.value === "Return" || input.value === "return"){
+                   window.open("index.html", "_self");
+                }
+                else {
+                    document.getElementById('error').innerHTML = input.value + " is not recognized as an internal or external command, operable program, or batch file.";
+                }
+              }
+            });
+        </script>
+        <br>
+        <p id="error"></p>
+
+    </div>
+</body>
+</html>
