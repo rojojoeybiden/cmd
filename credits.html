@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img/cmd.png">
+    <link rel="icon" type="image/x-icon" href="cmd.png">
     <title>Title of Website</title>
 </head>
 
@@ -12,7 +12,7 @@
     <div id="allhead">
         <div id="header">
             <div class="headerTitle">
-                <img src="img/cmd.png" alt="cmd logo">
+                <img src="cmd.png" alt="cmd logo">
                 <p>Team Joey (Lovelace)</p>
             </div>
 
@@ -188,6 +188,16 @@
         </script>
         <br>
         <p id="error"></p>
+
+        <script>
+            // Function to focus on the input field
+            function focusInput() {
+                document.getElementById('input').focus();
+            }
+    
+            // Call the focusInput function when the page loads
+            window.onload = focusInput;
+        </script>
         
     </div>
 </body>
