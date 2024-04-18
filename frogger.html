@@ -40,7 +40,7 @@
     <br>
     <div id="search">
         <p>C:\Joey\user></p>
-        <input id="input" type="text" placeholder="_">
+        <input id="input" type="text" placeholder="_" autocomplete="off">
     </div>
 
     <br>
@@ -89,13 +89,32 @@
         <br>
         <p id="error"></p>
 
-<canvas width="624" height="720" id="game"></canvas>
+        <script>
+          // Function to focus on the input field
+          function focusInput() {
+              document.getElementById('input').focus();
+          }
+      
+          // Call the focusInput function when the page loads
+          window.onload = focusInput;
+      
+          // Add event listener for keydown events
+          document.addEventListener('keydown', function(event) {
+              // Check if the pressed key is an arrow key (key codes 37, 38, 39, 40)
+              if (event.keyCode >= 37 && event.keyCode <= 40) {
+                  // Prevent the default action of the arrow keys
+                  event.preventDefault();
+              }
+          });
+      </script>
+
+<canvas width="468" height="540" id="game"></canvas>
 <script>
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
 
-const grid = 48;
-const gridGap = 10;
+const grid = 36;
+const gridGap = 7;
 
 // a simple sprite prototype function
 function Sprite(props) {

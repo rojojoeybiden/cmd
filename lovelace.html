@@ -58,7 +58,7 @@
 
         <div id="search">
             <p>C:\Joey\user></p>
-            <input id="input" type="text" placeholder="_">
+            <input id="input" type="text" placeholder="_" autocomplete="off">
         </div>
 
         <br>
@@ -106,6 +106,16 @@
         </script>
         <br>
         <p id="error"></p>
+
+        <script>
+            // Function to focus on the input field
+            function focusInput() {
+                document.getElementById('input').focus();
+            }
+
+            // Call the focusInput function when the page loads
+            window.onload = focusInput;
+        </script>
 
     </div>
 </body>

@@ -113,11 +113,14 @@ a {
 
 .ascii {
     font-size: 8px;
+    white-space: pre-line;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #creators {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -137,4 +140,16 @@ a {
     border-radius: 2px;
 
     font-size: 20px;
+}
+
+#list {
+    display: flex;
+}
+
+#helpName {
+    width: 20%;
+}
+
+#helpDesc {
+    width: 80%;
 }

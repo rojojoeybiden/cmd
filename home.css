@@ -66,42 +66,6 @@ a {
     font-size: 8px;
 }
 
-#header {
-    width: 95%;
-    padding: 0.8vh 3.5vh;
-    background-color: rgb(51, 47, 47);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-#header .headerTitle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#header img {
-    width: 30px;
-}
-
-.headerbutton,.closebutton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4%;
-    background-color: rgb(51, 47, 47);
-    transition: background-color 0.3 ease;
-}
-
-.headerbutton:hover {
-    background-color: #1a1a1a;
-}
-
-.closebutton:hover {
-    background-color: red;
-}
 
 #pog{
     padding-left: 0.3rem;
@@ -110,7 +74,6 @@ a {
 #search{
     display: flex;
     align-items: center;
-    gap: 1rem;
 }
 
 #search input{
@@ -124,16 +87,4 @@ a {
     border-radius: 2px;
 
     font-size: 20px;
-}
-
-#list {
-    display: flex;
-}
-
-#helpName {
-    width: 20%;
-}
-
-#helpDesc {
-    width: 80%;
 }

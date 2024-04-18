@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="cmd.png">
     <title>Help | The Command Prompt</title>
 </head>
@@ -32,8 +32,8 @@
             </a>
         </div>
     </div>
-    <br>
-    <div id="pog">
+    
+    <div id="content">
         <p>Team Joey | Lovelace [Version 1.0]</p>
         <p>(c) Joey & Hiro. All rights reserved.</p>
         <br>
@@ -69,7 +69,7 @@
         <br>
         <div id="search">
             <p>C:\Joey\user></p>
-            <input id="input" type="text" placeholder="_">
+            <input id="input" type="text" placeholder="_" autocomplete="off">
         </div>
         
         <br>
@@ -118,6 +118,27 @@
         <br>
         <p id="error"></p>
 
+        <script>
+            // Function to focus on the input field
+            function focusInput() {
+                document.getElementById('input').focus();
+            }
+    
+            // Call the focusInput function when the page loads
+            window.onload = focusInput;
+        </script>
+
+        <script>
+            // Function to focus on the input field
+            function focusInput() {
+                document.getElementById('input').focus();
+            }
+
+            // Call the focusInput function when the page loads
+            window.onload = focusInput;
+        </script>
+
     </div>
+
 </body>
 </html>
